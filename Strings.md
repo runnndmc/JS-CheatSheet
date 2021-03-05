@@ -15,6 +15,20 @@ ex. "hello there there" - it would only replace the first one and not the second
 
 you could instead use .replaceAll() 
 
+**OR**
+
+if you want to replace all of one value in a string, you can use a regular expression saved to a variable to then include the global and ignore case flags. This permits replace() to replace **each occurrence** 
+
+ex:
+```
+let re = /apples/gi
+let str = "these apples are not apples at all, they're plums!"
+
+let newStr = str.replace(re, 'peaches')
+console.log(newStr) => "these peaches are not peaches at all, they're plums!"
+
+```
+
 ## string.split()
 
 a **menthod** that takes a string and divides it into an ordered list of sub strings that are put into an **array** and returns the array.
