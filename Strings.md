@@ -29,23 +29,40 @@ console.log(newStr) => "these peaches are not peaches at all, they're plums!"
 
 ```
 
-## string.split()
+## string.substring()
 
-a **menthod** that takes a string and divides it into an ordered list of sub strings that are put into an **array** and returns the array.
+a **menthod** that returns the part of the string between the beginning and ending index given.
 
-The method divides (or splits) the string where the pattern is located.
+If there is just the beginning index listed then it will go to the end of the string.
 
-**string.split([seperator[,limit]])**
+**string.substring(indexStart[,indexEnd])**
 
-a limit is optional but is a non-negative integer that specifies the limit on the number of substrings to be included in the array
+If the indexStart is greater than the indexEnd it would act as if the two arguments were swapped. Any argument value that is NaN is treated as a 0.
 
 ex:
 ```
 let str = 'hello world'
-let cut = str.split(' ')
+let cut = str.substring(1,4)
 
-console.log(cut) ==> ['hello', 'world']
+console.log(cut) ==> 'ello'
 
-let cutOne = str.split(' ', 1)
-console.log(cutOne) ==> ['hello']
+let cutOne = str.substring(1, 0)
+console.log(cutOne) ==> 'h'
 ```
+
+## string.replace() 
+
+a **method** that returns a **new** string with some or all matched of a pattern replaced by a replacement.
+
+ex: 
+```
+let str = 'hello there'
+
+let newStr = str.replace('there', 'friend');
+console.log(newStr) ==> 'hello friend'
+```
+
+if there are multiple values that are the same - 
+ex. "hello there there" - it would only replace the first one and not the second
+
+you could instead use .replaceAll() 
