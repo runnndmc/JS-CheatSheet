@@ -4,7 +4,7 @@ a **method** that returns a **shallow COPY** of a portion of an array into a new
 
 _the original array will **not** be modified_
 
->> arr.slice(start, end)
+> arr.slice(start, end)
 
 If end is omitted, slice extracts through the end of the sequence (arr.length).
 
@@ -19,7 +19,7 @@ console.log(theLadies) ==> ['luna', 'daisy']
 
 a **method** that **CHANGES an array** by adding or removing elements from it.  
 
->> let newArr = arr.splice(**start**[, deleteCount[, item1[, item2[, ...]]]])
+> let newArr = arr.splice(**start**[, deleteCount[, item1[, item2[, ...]]]])
 
 If the start is negative, it will begin that many elements from the _end_ of the array.
 
