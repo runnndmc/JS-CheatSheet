@@ -67,5 +67,29 @@ let newFilteredArray = [12, 5, 8, 130, 44].filter(isBigEnough)
 newFilteredArray ==>[12, 130, 44]
 ```
 
+## array.includes();
+
+a **method** that determines whether an array includes a certian value in it's entries. This returns a true or false 
+
+```
+arr.includes(valueToFind[, fromIndex])
+
+```
+
+valueToFind - what to search for
+
+fromIndex (optional) - the position in the array where to start the search
+
+If fromIndex is greater than or equal to the length of the array, false is returned. The array will not be searched.
+
+```
+let arr = [1, 2, 3]
+
+arr.includes(1) => true
+arr.includes(7) => false
+arr.includes(1, 100) => false
+arr.includes(1, 3) => false
+```
+
 
 
