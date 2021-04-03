@@ -50,19 +50,24 @@ let cutOne = str.substring(1, 0)
 console.log(cutOne) ==> 'h'
 ```
 
-## string.replace() 
+## string.split() 
 
-a **method** that returns a **new** string with some or all matched of a pattern replaced by a replacement.
+a **method** that divides a string into an ordered list of substrings and puts the substrings into an **array**. The division is done by searching for a pattern that is described as the first parameter of the methods call.
 
 ex: 
 ```
-let str = 'hello there'
+let str = 'The Kind Person is Kind'
 
-let newStr = str.replace('there', 'friend');
-console.log(newStr) ==> 'hello friend'
+let strCopy = str.split(' ');
+console.log(strCopy) ==> ['The', 'Kind', 'Person', 'is', 'Kind']
 ```
 
-if there are multiple values that are the same - 
-ex. "hello there there" - it would only replace the first one and not the second
+**str.split([separator[, limit]])**
 
-you could instead use .replaceAll() 
+separator - (optional) the pattern describing where each split should occur. 
+
+If the separator is omitted, the returned arr contains one element consisting of the entire string
+
+limit - (optional) A non-negative integer that specifies a limit on the number of substrings to be included in the array
+
+If included, it splits the string at the pattern but stops when the limit entries have been placed in the array and any leftover text is not included in the array at all. 
