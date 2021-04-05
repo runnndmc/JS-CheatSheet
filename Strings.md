@@ -71,3 +71,21 @@ If the separator is omitted, the returned arr contains one element consisting of
 limit - (optional) A non-negative integer that specifies a limit on the number of substrings to be included in the array
 
 If included, it splits the string at the pattern but stops when the limit entries have been placed in the array and any leftover text is not included in the array at all. 
+
+## string.chatAt() 
+
+a **method** that returns a new string consisting of the singlr UTF-16 code unit located at the specified offset into the string.
+
+ex: 
+```
+let str = 'The quick brown fox'
+
+const index = 4
+
+console.log(`The character at index ${index} is ${str.charAt(index)}`)
+  ==> 'The character at index 4 is q'
+```
+
+**let characher = str.charAt(index)**
+
+index - an integer between 0 and str.length -1. If the index cannot be converted to the integer or no index is provided, the default is 0 so the first character of str is returned 
