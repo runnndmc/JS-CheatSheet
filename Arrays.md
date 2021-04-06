@@ -91,5 +91,28 @@ arr.includes(1, 100) => false
 arr.includes(1, 3) => false
 ```
 
+## array.indexOf();
+
+a **method** that returns the first index at which a given element can be found in the array or -1 if it is not present.
+
+```
+arr.indexOf(searchElement[, fromIndex])
+
+```
+
+searchElement - Element to locate in the array
+
+fromIndex (optional) - the index to start the search at. If the index is greater than or equal to the array's length, -1 is returned, which means the array will not be searched. 
+
+
+```
+let arr = [3, 5, 9, 9]
+
+arr.indexOf(3) => 0
+arr.indexOf(5) => 1
+arr.indexOf(9, 2) => 3
+arr.indexOf(1, 3) => -1
+```
+
 
 
