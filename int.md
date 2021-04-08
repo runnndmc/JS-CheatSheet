@@ -1,6 +1,5 @@
-### Integers 
-
-## Int to Array 
+### Integers
+### Int to Array 
 
 Converting integers into an array:
 ```
@@ -27,4 +26,4 @@ console.log(arr) ==> "159361"
 ```
 
 > Number
-The Number constructor contains constants and methods for working with nummbers
+The Number constructor contains constants and methods for working with numbers
