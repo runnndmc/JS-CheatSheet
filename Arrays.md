@@ -100,18 +100,34 @@ arr.indexOf(searchElement[, fromIndex])
 
 ```
 
-searchElement - Element to locate in the array
+## array.reduce();
 
-fromIndex (optional) - the index to start the search at. If the index is greater than or equal to the array's length, -1 is returned, which means the array will not be searched. 
-
+a **method** that executes a reducer your provided function on each element of the array - resulting in a single output value.
 
 ```
-let arr = [3, 5, 9, 9]
+arr.reduce(callback (accumulator, currentValue, [, index[, array]] )[, initialValue])
 
-arr.indexOf(3) => 0
-arr.indexOf(5) => 1
-arr.indexOf(9, 2) => 3
-arr.indexOf(1, 3) => -1
+```
+
+callback - a function to execute on each element in the array *except the first is no initialValue is supplied*
+
+The callback takes the arguments: 
+
+accumulator - the accumulator accumulates the callback's return values. It is the accumulated value previously returned in the last invocation of the callback -- or the initialValue if supplied
+
+currentValue - The current element being processed in the array
+
+index (optional) - The index of the current element being processed in the array. Starts at index 0 if an initialValue is provided. Otherwise it starts from index 1.
+
+array (optional) - The array reduce() is being called upon 
+
+initialValue - a value to use as the first argument to the first call of the callback. Calling reduce() on an empty array without an initialValue will throw a typeError
+
+```
+const arr = [3, 5, 9, 9]
+const reducer = (accumulator, currentValue) => accumulator + currentValue
+
+console.log(arr.reduce(reducer)) ==> 26
 ```
 
 
