@@ -23,7 +23,7 @@ a **method** that **CHANGES an array** by adding or removing elements from it.
 
 If the start is negative, it will begin that many elements from the _end_ of the array.
 
-You can remove elements from teh array by including a deleteCount that will remove the amount indicated from the start of the array. If the deleteCount is negatove or 0, no elements are removed.
+You can remove elements from the array by including a deleteCount that will remove the amount indicated from the start of the array. If the deleteCount is negative or 0, no elements are removed.
 
 You can also add elements to an array by including the item1, item2, etc. values. 
 
