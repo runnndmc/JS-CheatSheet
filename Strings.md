@@ -29,13 +29,16 @@ console.log(newStr) => "these peaches are not peaches at all, they're plums!"
 
 ```
 
+<br></br>
+
+
 ## string.substring()
 
 a **menthod** that returns the part of the string between the beginning and ending index given.
 
 If there is just the beginning index listed then it will go to the end of the string.
 
-**string.substring(indexStart[,indexEnd])**
+>string.substring(indexStart[,indexEnd])
 
 If the indexStart is greater than the indexEnd it would act as if the two arguments were swapped. Any argument value that is NaN is treated as a 0.
 
@@ -50,6 +53,10 @@ let cutOne = str.substring(1, 0)
 console.log(cutOne) ==> 'h'
 ```
 
+
+<br></br>
+
+
 ## string.split() 
 
 a **method** that divides a string into an ordered list of substrings and puts the substrings into an **array**. The division is done by searching for a pattern that is described as the first parameter of the methods call.
@@ -62,7 +69,7 @@ let strCopy = str.split(' ');
 console.log(strCopy) ==> ['The', 'Kind', 'Person', 'is', 'Kind']
 ```
 
-**str.split([separator[, limit]])**
+>str.split([separator[, limit]])
 
 separator - (optional) the pattern describing where each split should occur. 
 
@@ -71,6 +78,11 @@ If the separator is omitted, the returned arr contains one element consisting of
 limit - (optional) A non-negative integer that specifies a limit on the number of substrings to be included in the array
 
 If included, it splits the string at the pattern but stops when the limit entries have been placed in the array and any leftover text is not included in the array at all. 
+
+
+
+<br></br>
+
 
 ## string.chatAt() 
 
@@ -89,3 +101,48 @@ console.log(`The character at index ${index} is ${str.charAt(index)}`)
 **let characher = str.charAt(index)**
 
 index - an integer between 0 and str.length -1. If the index cannot be converted to the integer or no index is provided, the default is 0 so the first character of str is returned 
+
+
+<br></br>
+
+
+## string.repeat() 
+
+a **method** that returns a new string that contains the specified number of copies od the string on which it was called all concatenated together.
+
+ex: 
+```
+let str = 'Today is a new day.'
+
+console.log(str.repeat(3))
+  ==> 'Today is a new day.Today is a new day.Today is a new day.'
+  
+  
+'abc'.repeat(2) ==> 'abcabc'
+  
+```
+> str.repeat(count)
+
+count - an integer between 0 and infinity indicating the number of times to repeat the string.
+
+<br></br>
+
+## string.repeat() 
+
+a **method** that returns a new string that contains the specified number of copies od the string on which it was called all concatenated together.
+
+ex: 
+```
+let str = 'Today is a new day.'
+
+console.log(str.repeat(3))
+  ==> 'Today is a new day.Today is a new day.Today is a new day.'
+  
+  
+'abc'.repeat(2) ==> 'abcabc'
+  
+```
+> str.repeat(count)
+
+count - an integer between 0 and infinity indicating the number of times to repeat the string.
+
