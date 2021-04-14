@@ -127,22 +127,29 @@ count - an integer between 0 and infinity indicating the number of times to repe
 
 <br></br>
 
-## string.repeat() 
+## string.padStart() 
 
-a **method** that returns a new string that contains the specified number of copies od the string on which it was called all concatenated together.
+a **method** that pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string. 
 
 ex: 
 ```
-let str = 'Today is a new day.'
+const str = '8'
 
-console.log(str.repeat(3))
-  ==> 'Today is a new day.Today is a new day.Today is a new day.'
+console.log(str.padStart(3,'0'))
+  ==> '0008'
   
   
-'abc'.repeat(2) ==> 'abcabc'
+const fullNum = "01234324567565476"
+const lastFour = fullNum.slice(-4)
+const hiddenNum = lastFour.padStart(fullNum.length, '*')
+
+console.log(hiddenNum) ==> "*************5476"
   
 ```
-> str.repeat(count)
+> str.padStart(targetLength [, padString))
 
-count - an integer between 0 and infinity indicating the number of times to repeat the string.
+targetLength - The length of the resulting string once the current str has been padded. If the value is less than str.length then str is returned as is. 
 
+padString - (optional)the string to pad the current str with. If padString is too long, to stay within the targetLength it will be truncated from the end.
+
+<br></br>
