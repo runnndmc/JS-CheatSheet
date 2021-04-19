@@ -131,7 +131,7 @@ count - an integer between 0 and infinity indicating the number of times to repe
 
 a **method** that pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string. 
 
-ex: 
+ex:  
 ```
 const str = '8'
 
