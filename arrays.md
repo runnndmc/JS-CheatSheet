@@ -140,3 +140,25 @@ let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
 // flattened is [0, 1, 2, 3, 4, 5]
 ```
 
+## array.join();
+
+a **method** that creates and returns a new **String** by concatenating all of the elements in an array (or array-like object) seperated by commas or specified by a seperator sting.
+
+
+>arr.join([seperator])
+
+seperator(optional) - Specifies a string to seperate each pair of adjacent elements of the array. The seperator is converted to a string if necessary. 
+
+---> If the seperator is ommited, the array elements are separated with a comma. 
+
+```
+const arr = ["Wine", "Beer", "Liquor", "Seltzer"]
+
+
+console.log(arr.join()) ==> "Wine,Beer,Liquor,Seltzer"
+console.log(arr.join(', ')) ==> "Wine, Beer, Liquor, Seltzer"
+console.log(arr.join(' + ')) ==> "Wine + Beer + Liquor + Seltzer"
+console.log(arr.join('')) ==> "WineBeerLiquorSeltzer"
+
+```
+
