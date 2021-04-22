@@ -171,7 +171,7 @@ a **method** that adds one or more elements to the beginning of an array and ret
 >unshift(element0, element1)
 >unshift(element0, element1, ... , elementN)
 
-elementN - The elements to ass to the front of the arr. 
+elementN - The elements to add to the front of the arr. 
 
 ---> returns the new length property of the object upon which the method was called. 
 
