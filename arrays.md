@@ -162,3 +162,29 @@ console.log(arr.join('')) ==> "WineBeerLiquorSeltzer"
 
 ```
 
+## array.unshift();
+
+a **method** that adds one or more elements to the beginning of an array and returns the new length of the array.
+
+
+>unshift(element0)
+>unshift(element0, element1)
+>unshift(element0, element1, ... , elementN)
+
+elementN - The elements to ass to the front of the arr. 
+
+---> returns the new length property of the object upon which the method was called. 
+
+```
+const arr = [4,5,6]
+
+console.log(arr.unshift(1,2,3)) ==> [1,2,3,4,5,6]
+
+arr.unshift(1)
+arr.unshift(2)
+arr.unshift(3)
+
+console.log(arr) ==> [3,2,1,4,5,6]
+
+```
+
