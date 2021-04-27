@@ -188,3 +188,22 @@ console.log(arr) ==> [3,2,1,4,5,6]
 
 ```
 
+## array.shift();
+
+a **method** that removes the first element from the beginning of an array and returns that removed element. This method changes the length of the array.
+
+
+>shift()
+
+
+---> returns the removed element from the array or undeifned if the array is empty
+
+```
+const arr = [7,8,9]
+
+arr.shift() ==> 7
+
+console.log(arr) ==> [8,9]
+
+```
+
