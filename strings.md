@@ -153,3 +153,33 @@ targetLength - The length of the resulting string once the current str has been 
 padString - (optional)the string to pad the current str with. If padString is too long, to stay within the targetLength it will be truncated from the end.
 
 <br></br>
+
+
+## string.match() 
+
+a **method** that retrieves the result of matching a string against a regular expression
+
+ex:  
+```
+const str = 'Am I missing anything?'
+
+console.log(str.match(/[A-Z/g))
+  ==> ["A", "I"]
+  
+ -or-
+ 
+ const str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+ const regexp = /[A-E]/gi;
+ const matchesArr = str.match(regexp)
+ 
+ console.log(matchesArr) ==> ["A", "B", "C", "D", "E", "a", "b", "c", "d", "e"]
+  
+```
+> str.match(regexp)
+
+
+regexp - if regexp is a non-regexp object, it is implicitly converted to a regexp by using new RegExp(regexp)
+
+if you dont have a parameter, you will get an Array with an empty string: [""]
+
+<br></br>
