@@ -71,4 +71,14 @@ objects that represent patterns in strings. They use their own language to expre
 ## What string methods are used for regular expressions?
  match, replace, search
 
+## What is Asynchronous programming?
+makes it possible to express waiting for long running actions without freezing the program during these actions. This style of programming can be implemented using callbacks and an event loop schedules such callbacks to be called when the actions complete. 
+
+## What is a promise? 
+objects that represent actions tat might complete in the future and async functions which allow you to write an async program as if it were synchronous.
+
+## What is the DOM?
+A data structore that represnts the browsers model of the document and a javaScript program can modify it to change the visible document.
+
+
 
