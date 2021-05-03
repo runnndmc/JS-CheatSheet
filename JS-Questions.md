@@ -81,4 +81,11 @@ objects that represent actions tat might complete in the future and async functi
 A data structore that represnts the browsers model of the document and a javaScript program can modify it to change the visible document.
 
 
+## How does the Http protocol work?
+A client sends a request that contains a methos and a path that identifies a resource. The server then decides what to do with the request and responds with a status code and a response body. 
 
+## What is a fetch request?
+The interface through which browser JavaScript can make HTTP requests.
+
+## What is the difference between local and session storage?
+Local storage saves information forever or until the user decides to clear it and session saves it until the browser is closed. 
