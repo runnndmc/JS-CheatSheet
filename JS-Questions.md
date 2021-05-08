@@ -16,7 +16,7 @@ Special numbers are: Infinity, -Infinity, NaN (even though it is a value of the 
 
 
 ## How does a program keep an internal state?
-JavaScript provides a binding or a variable 
+JavaScript provides a binding or a variable to set internal state
 
 ```
 let ten = 10
@@ -25,25 +25,51 @@ console.log(ten * ten)
 ```
 
 the keyword let indicates that this sentence is going to define a binding called ten. 
-After the binfing has been definedm its name can be used as an expression. 
+After the binding has been defined its name can be used as an expression. 
 The value od such an expression is the value that the binding currenty holds. 
 
 ## What is a JavaScript Environment?
-the collection of bindings and their values that exist at a given time. The set of bindings that are defined. 
+A JS environment is a collection of bindings and their values that are defined and exist at a given time.
 
 ## What is a function?
 a piece of program wrapped in a value that can be applied in order to run the wrapped program. 
 Special values that wrap a piece of a program. 
 
 ## What is a conditional execution?
-Where the program takes the proper branch based on the situation at hand. - created with an if statement 
+A conditional execution is where the program takes the proper branch based on the situation indicated. - created with an if statement 
 
 ## How would you introduce disturbances in the control flow?
-By introducing a conditional (if, else, switch) or with looping statements (while, do, for)
+By introducing a conditional statement (if, else, switch) or with looping statements (while, do, for)
 
 ## What creates a function value? 
 When you use the function keyword as an expression. 
 
+# What is the difference between a function expression and a function declaration?
+The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions. A function expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined.
+
+# Are function expressions hoisted in JS?
+No, you cant use function expressions before you create them. Unlike function expressions, with function declarations you can uuse a function before it is declared.
+
+```
+//function declaration: 
+
+hoisted(); ==> logs "moo"
+
+function hoisted() {
+  console.log('moo');
+}
+
+========================
+
+function expression: 
+
+notHoisted(); ==> TypeError: notHoisted is not a function
+
+var notHoisted = function() {
+   console.log('bar');
+};
+
+```
 ## What happens when you use function as a statement?
 It can be used to declare a binding and give it a function as its value. 
 
@@ -51,7 +77,7 @@ It can be used to declare a binding and give it a function as its value.
 Part of the program in which the binding is visible. The scope could either be local, global or lexical (nested).
 
 ## How are properties accessed in JS?
-value.prop or value["prop"]
+value.prop ----- or ------ value["prop"]
 
 ## What are methods?
 functions that live inside properties and usually act on the value they are a property of. 
