@@ -86,16 +86,16 @@ functions that live inside properties and usually act on the value they are a pr
 Abstractions hid the details and give us the ability to talk about problems at a higher or more abstract level. 
 
 ## What are higher order functions?
-Functions that operate on other functions either by taking them as arguments or returning them. This allows us to abstract over actions and not just values. 
+Higher order functions are functions that operate on other functions either by taking them as arguments or returning them. This allows us to abstract over actions and not just values. 
 
 ## What is the difference between forEach and .map? 
-forEach loops through the elements in an array and does not return any values once it has been run while .map performs a function on each value of an array and returns a transformed array with new values performed by the function.
+forEach loops through the elements in an array and does not return any values once it has been run. On the other hand .map performs a function on each value of an array and returns a transformed array with new values performed by the function.
 
-## what is a regular expression?
+## What is a regular expression?
 objects that represent patterns in strings. They use their own language to express these patterns.
 
 ## What string methods are used for regular expressions?
- match, replace, search
+ .match() / .replace() / .search()
 
 ## What is Asynchronous programming?
 makes it possible to express waiting for long running actions without freezing the program during these actions. This style of programming can be implemented using callbacks and an event loop schedules such callbacks to be called when the actions complete. 
