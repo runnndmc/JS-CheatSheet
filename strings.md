@@ -11,7 +11,7 @@ console.log(newStr) ==> 'hello friend'
 ```
 
 if there are multiple values that are the same - 
-ex. "hello there there" - it would only replace the first one and not the second
+ex. "hello there there" - it would only replace the *first* one and not the second
 
 you could instead use .replaceAll() 
 
@@ -21,10 +21,10 @@ if you want to replace all of one value in a string, you can use a regular expre
 
 ex:
 ```
-let re = /apples/gi
-let str = "these apples are not apples at all, they're plums!"
+const regEx = /apples/gi
+const str = "these apples are not apples at all, they're plums!"
 
-let newStr = str.replace(re, 'peaches')
+const newStr = str.replace(regEx, 'peaches')
 console.log(newStr) => "these peaches are not peaches at all, they're plums!"
 
 ```
@@ -34,13 +34,9 @@ console.log(newStr) => "these peaches are not peaches at all, they're plums!"
 
 ## string.substring()
 
-a **menthod** that returns the part of the string between the beginning and ending index given.
-
-If there is just the beginning index listed then it will go to the end of the string.
+a **method** that returns the *part* of the string between the beginning and ending index given.
 
 >string.substring(indexStart[,indexEnd])
-
-If the indexStart is greater than the indexEnd it would act as if the two arguments were swapped. Any argument value that is NaN is treated as a 0.
 
 ex:
 ```
@@ -53,13 +49,29 @@ let cutOne = str.substring(1, 0)
 console.log(cutOne) ==> 'h'
 ```
 
+If there is just the beginning index listed then it will go to the end of the string.
+
+If the indexStart is greater than the indexEnd it would act as if the two arguments were swapped. 
+
+Any argument value that is NaN is treated as a 0.
+
 
 <br></br>
 
 
-## string.split() 
+## string.split() ['SP','LIT']
 
 a **method** that divides a string into an ordered list of substrings and puts the substrings into an **array**. The division is done by searching for a pattern that is described as the first parameter of the methods call.
+
+
+>str.split([separator[, limit]])
+
+separator - (optional) the pattern describing where each split should occur. 
+
+If the separator is omitted, the returned arr contains one element consisting of the entire string
+
+limit - (optional) A non-negative integer that specifies a limit on the number of substrings to be included in the array
+
 
 ex: 
 ```
@@ -69,13 +81,6 @@ let strCopy = str.split(' ');
 console.log(strCopy) ==> ['The', 'Kind', 'Person', 'is', 'Kind']
 ```
 
->str.split([separator[, limit]])
-
-separator - (optional) the pattern describing where each split should occur. 
-
-If the separator is omitted, the returned arr contains one element consisting of the entire string
-
-limit - (optional) A non-negative integer that specifies a limit on the number of substrings to be included in the array
 
 If included, it splits the string at the pattern but stops when the limit entries have been placed in the array and any leftover text is not included in the array at all. 
 
@@ -86,13 +91,16 @@ If included, it splits the string at the pattern but stops when the limit entrie
 
 ## string.chatAt() 
 
-a **method** that returns a new string consisting of the singlr UTF-16 code unit located at the specified offset into the string.
+a **method** that returns a *new string* consisting of the single UTF-16 code unit located at the specified offset into the string.
 
 ex: 
 ```
-let str = 'The quick brown fox'
+const str = 'The quick brown fox'
 
 const index = 4
+
+console.log(str.charAt(index)) 
+===> 'q'
 
 console.log(`The character at index ${index} is ${str.charAt(index)}`)
   ==> 'The character at index 4 is q'
@@ -110,6 +118,7 @@ index - an integer between 0 and str.length -1. If the index cannot be converted
 
 a **method** that returns a new string that contains the specified number of copies od the string on which it was called all concatenated together.
 
+
 ex: 
 ```
 let str = 'Today is a new day.'
@@ -125,11 +134,12 @@ console.log(str.repeat(3))
 
 count - an integer between 0 and infinity indicating the number of times to repeat the string.
 
+
 <br></br>
 
 ## string.padStart() 
 
-a **method** that pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string. 
+a **method** that pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the *start* of the current string. 
 
 ex:  
 ```
@@ -157,7 +167,7 @@ padString - (optional)the string to pad the current str with. If padString is to
 
 ## string.match() 
 
-a **method** that retrieves the result of matching a string against a regular expression
+a **method** that retrieves the result of matching a string against a *regular expression*
 
 ex:  
 ```
@@ -175,8 +185,8 @@ console.log(str.match(/[A-Z/g))
  console.log(matchesArr) ==> ["A", "B", "C", "D", "E", "a", "b", "c", "d", "e"]
   
 ```
-> str.match(regexp)
 
+> str.match(regexp)
 
 regexp - if regexp is a non-regexp object, it is implicitly converted to a regexp by using new RegExp(regexp)
 
