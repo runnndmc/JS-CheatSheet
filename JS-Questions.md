@@ -32,7 +32,7 @@ The value od such an expression is the value that the binding currenty holds.
 A JS environment is a collection of bindings and their values that are defined and exist at a given time.
 
 ## What is a function?
-a piece of program wrapped in a value that can be applied in order to run the wrapped program. 
+a function is a piece of program wrapped in a value that can be applied in order to run the wrapped program. 
 Special values that wrap a piece of a program. 
 
 ## What is a conditional execution?
@@ -45,10 +45,14 @@ By introducing a conditional statement (if, else, switch) or with looping statem
 When you use the function keyword as an expression. 
 
 # What is the difference between a function expression and a function declaration?
-The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions. A function expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined.
+The main difference between a function expression and a function declaration is the function name,
+The function name can be omitted in function expressions to create *anonymous functions.*
+A function expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined.
 
 # Are function expressions hoisted in JS?
-No, you cant use function expressions before you create them. Unlike function expressions, with function declarations you can uuse a function before it is declared.
+No, function expressions can not be hoisted in JS. 
+This is because you cant use function expressions before you create them.
+With function declarations you can use a function before it is declared.
 
 ```
 //function declaration: 
