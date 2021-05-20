@@ -1,6 +1,7 @@
 ## array.slice()
 
-a **method** that returns a **shallow COPY** of a portion of an array into a new array object selected from start to end where the start and end represent the index of items in that array.
+a **method** that returns a **shallow COPY** of a portion of an array into a new array object selected from start to end.
+The start and end represent the index of items in that shalllow copy array.
 
 _the original array will **not** be modified_
 
@@ -104,24 +105,7 @@ arr.indexOf(searchElement[, fromIndex])
 
 a **method** that executes a reducer your provided function on each element of the array - resulting in a single output value.
 
-```
-arr.reduce(callback (accumulator, currentValue, [, index[, array]] )[, initialValue])
 
-```
-
-callback - a function to execute on each element in the array *except the first is no initialValue is supplied*
-
-The callback takes the arguments: 
-
-accumulator - the accumulator accumulates the callback's return values. It is the accumulated value previously returned in the last invocation of the callback -- or the initialValue if supplied
-
-currentValue - The current element being processed in the array
-
-index (optional) - The index of the current element being processed in the array. Starts at index 0 if an initialValue is provided. Otherwise it starts from index 1.
-
-array (optional) - The array reduce() is being called upon 
-
-initialValue - a value to use as the first argument to the first call of the callback. Calling reduce() on an empty array without an initialValue will throw a typeError
 
 ```
 const arr = [3, 5, 9, 9]
@@ -139,6 +123,26 @@ let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
 )
 // flattened is [0, 1, 2, 3, 4, 5]
 ```
+
+
+>arr.reduce(callback (accumulator, currentValue, [, index[, array]] )[, initialValue])
+
+
+
+callback - a function to execute on each element in the array *except the first is no initialValue is supplied*
+
+The callback takes the arguments: 
+
+accumulator - the accumulator accumulates the callback's return values. It is the accumulated value previously returned in the last invocation of the callback -- or the initialValue if supplied
+
+currentValue - The current element being processed in the array
+
+index (optional) - The index of the current element being processed in the array. Starts at index 0 if an initialValue is provided. Otherwise it starts from index 1.
+
+array (optional) - The array reduce() is being called upon 
+
+initialValue - a value to use as the first argument to the first call of the callback. Calling reduce() on an empty array without an initialValue will throw a typeError
+
 
 ## array.join();
 
