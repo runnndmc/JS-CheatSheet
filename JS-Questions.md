@@ -118,4 +118,18 @@ A client sends a request that contains a methos and a path that identifies a res
 The interface through which browser JavaScript can make HTTP requests.
 
 ## What is the difference between local and session storage?
-Local storage saves information forever or until the user decides to clear it and session saves it until the browser is closed. 
+Local storage saves information forever or until the user decides to clear it. Session storagee saves the information until the browser is closed. 
+
+You can store items in local storage by using setItem(), getItem(), removeItem(), clear() or key()
+
+Local storange can only store strings. 
+To store objects or arrays you can first use JSON.stringify() method before passing .setItem()
+
+```
+const person = {
+  name: "Dayna",
+  gender: "female"
+ }
+
+window.localStorage.setItem('user', JSON.stringify(person))
+```
