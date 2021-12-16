@@ -108,17 +108,17 @@ Async programming makes it possible to express waiting for long running actions 
 A Promise consists of objects that represent actions that might complete in the future. Async functions allow you to write an async program as if it were synchronous.
 
 ## What is the DOM?
-A data structore that represnts the browsers model of the document and a javaScript program can modify it to change the visible document.
+A data structore that represents the browsers model of the document and a JavaScript program can modify it to change the visible document.
 
 
 ## How does the Http protocol work?
-A client sends a request that contains a methos and a path that identifies a resource. The server then decides what to do with the request and responds with a status code and a response body. 
+A client sends a request that contains a method and a path that identifies a resource. The server then decides what to do with the request and responds with a status code and a response body. 
 
 ## What is a fetch request?
 The interface through which browser JavaScript can make HTTP requests.
 
 ## What is the difference between local and session storage?
-Local storage saves information forever or until the user decides to clear it. Session storagee saves the information until the browser is closed. 
+Local storage saves information forever or until the user decides to clear it. Session storage saves the information until the browser is closed. 
 
 You can store items in local storage by using setItem(), getItem(), removeItem(), clear() or key()
 
