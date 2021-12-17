@@ -212,3 +212,15 @@ console.log(arr) ==> [8,9]
 
 ```
 
+## array.reverse();
+
+A method that reverses the order of the elements in an array. This method overwrites the original array.
+
+```
+const array = [7,8,9]
+
+array.reverse()
+
+console.log(array) ==> [9,8,7]
+```
+
