@@ -193,3 +193,19 @@ regexp - if regexp is a non-regexp object, it is implicitly converted to a regex
 if you dont have a parameter, you will get an Array with an empty string: [""]
 
 <br></br>
+
+> str.trim()
+
+removes white spaces from both ends of a string and returns a new string without modifying the original string.
+
+
+```
+ex:
+
+const str = "     hello     "
+console.log(str.trim()) ==> "hello"
+
+```
+
+
+<br></br>
