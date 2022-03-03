@@ -194,7 +194,7 @@ if you dont have a parameter, you will get an Array with an empty string: [""]
 
 <br></br>
 
-> str.trim()
+## str.trim()
 
 removes white spaces from both ends of a string and returns a new string without modifying the original string.
 
