@@ -195,7 +195,7 @@ console.log(arr) ==> [3,2,1,4,5,6]
 
 ## array.shift();
 
-a **method** that removes the first element from the beginning of an array and returns that removed element. This method changes the length of the array.
+a **method** that removes the first element from the **beginning** of an array and <br>*returns the **removed element**.* This method changes the length of the array.
 
 
 >shift()
@@ -214,7 +214,7 @@ console.log(arr) ==> [8,9]
 
 ## array.reverse();
 
-A method that reverses the order of the elements in an array. This method overwrites the original array.
+A method that reverses the order of the elements in an array. This method over writes the original array.
 
 ```
 const array = [7,8,9]
