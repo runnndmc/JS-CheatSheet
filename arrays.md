@@ -195,6 +195,8 @@ console.log(arr) ==> [3,2,1,4,5,6]
 
 ## array.shift();
 
+### removes | beginning | removed element
+
 a **method** that removes the first element from the **beginning** of an array and <br>*returns the **removed element**.* This method changes the length of the array.
 
 
