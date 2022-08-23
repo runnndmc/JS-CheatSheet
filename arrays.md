@@ -226,3 +226,15 @@ array.reverse()
 console.log(array) ==> [9,8,7]
 ```
 
+## array.every();
+
+A method that tests whether all elements in the array passs the teest implemented by the provided function. Returns a boolean value.
+```
+const isBelowThreshold = (currentValue) => currentValue < 40
+
+const array = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+==> true
+```
+
