@@ -153,7 +153,7 @@ a **method** that creates and returns a new **String** by concatenating all of t
 
 seperator(optional) - Specifies a string to seperate each pair of adjacent elements of the array. The seperator is converted to a string if necessary. 
 
----> If the seperator is ommited, the array elements are separated with a comma. 
+---> If the seperator is omitted, the array elements are separated with a comma. 
 
 ```
 const arr = ["Wine", "Beer", "Liquor", "Seltzer"]
